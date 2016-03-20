@@ -1,4 +1,4 @@
-== Facebook Challenge
+## Facebook Challenge
 + TODO :
  + Install `Postgresql database`
  + Install `gem devise`
