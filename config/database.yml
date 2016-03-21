@@ -19,12 +19,12 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
- database: odin_book_test
+  database: odin_book_test
   username: odin_book
   password: matias
   
 production:
   <<: *default
- database: odin_book_production
+  database: odin_book_production
   username: odin_book
   password: <%= ENV['ODIN_BOOK_DATABASE_PASSWORD'] %>
