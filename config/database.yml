@@ -11,15 +11,20 @@ default: &default
 
 development:
   <<: *default
-  database: 
-
+  database: odin_book_development
+  username: odin_book
+  password: roro
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: 
-
+ database: odin_book_test
+  username: odin_book
+  password: matias
+  
 production:
   <<: *default
-  database: 
+ database: odin_book_production
+  username: odin_book
+  password: <%= ENV['ODIN_BOOK_DATABASE_PASSWORD'] %>
