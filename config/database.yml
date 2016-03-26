@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PostgreSQL. Versions 8.2 and up are supported.
 #
 # Install the pg driver:
@@ -38,3 +39,35 @@ production:
   database: FacebookChallenge_production
   username: sensei
   password: <%= ENV['FACEBOOKCHALLENGE_DATABASE_PASSWORD'] %>
+=======
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: odin_book_development
+  username: odin_book
+  password: roro
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: odin_book_test
+  username: odin_book
+  password: matias
+  
+production:
+  <<: *default
+  database: odin_book_production
+  username: odin_book
+  password: <%= ENV['ODIN_BOOK_DATABASE_PASSWORD'] %>
+>>>>>>> b375fccd2fde6fd1c34eb2f665f8cefd7ff509b3

@@ -1,10 +1,19 @@
 source 'https://rubygems.org'
 
 
+<<<<<<< HEAD
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
+=======
+
+gem 'devise'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.2.5.1'
+# Use sqlite3 as the database for Active Record
+gem 'pg'
+>>>>>>> b375fccd2fde6fd1c34eb2f665f8cefd7ff509b3
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
